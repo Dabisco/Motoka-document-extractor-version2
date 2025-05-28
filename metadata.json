@@ -1,0 +1,8 @@
+{
+  "name": "Motoka Document Extractor",
+  "description": "An intelligent web application for Motoka to extract information from uploaded or camera-captured documents like driver's licenses, vehicle registrations, and insurance papers using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

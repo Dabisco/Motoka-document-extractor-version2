@@ -1,0 +1,11 @@
+{
+  "name": "motoka-document-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp metadata.json index.html dist/ && npx esbuild index.tsx --bundle --outfile=dist/main.js --platform=browser --format=esm --jsx-factory=React.createElement --jsx-fragment=React.Fragment --external:react --external:react-dom --external:react-dom/client --external:@google/genai --define:process.env.API_KEY='\"$API_KEY\"'"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
